@@ -1,0 +1,38 @@
+.sidebar {
+  height: auto;
+  width: 20rem;
+  left: 0;
+  top: 0;
+}
+
+.sidebar div {
+  padding: 8px;
+  font-size: 24px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  order: upper-roman;
+}
+
+li {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 80rem) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 40rem) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

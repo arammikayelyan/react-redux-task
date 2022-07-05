@@ -35,7 +35,6 @@ export function fetchByCategoryID(categoryID, limit=10) {
     try {
       const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=${limit}&page=1&category_ids=${categoryID}`)
       const data = await res.json()
-      console.log(data)
 
       dispatch(getCatsSuccess(data))
     } catch (error) {

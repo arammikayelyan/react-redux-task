@@ -32,7 +32,6 @@ export function fetchCategories() {
     try {
       const res = await fetch('https://api.thecatapi.com/v1/categories')
       const data = await res.json()
-      console.log(data)
 
       dispatch(getCategoriesSuccess(data))
     } catch (error) {

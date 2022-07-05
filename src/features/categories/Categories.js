@@ -13,7 +13,6 @@ export function Categories() {
   }, [dispatch])
 
   function getByCategory(categoryID) {
-    console.log(categoryID)
     dispatch(fetchByCategoryID(categoryID))
   }
 
